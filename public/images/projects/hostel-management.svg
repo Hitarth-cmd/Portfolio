@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Hostel Management System">
+  <rect width="1200" height="700" fill="#10233c"/>
+  <rect x="60" y="70" width="1080" height="560" rx="24" fill="#17375d"/>
+  <text x="100" y="160" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="52">Hostel Management System</text>
+  <text x="100" y="230" fill="#b7d4ff" font-family="Poppins, Arial, sans-serif" font-size="30">Registration • Room Allocation • Fee Tracking</text>
+  <text x="100" y="305" fill="#d4e6ff" font-family="Poppins, Arial, sans-serif" font-size="24">React.js • Node.js • Express.js • MongoDB</text>
+</svg>

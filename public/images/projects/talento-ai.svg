@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Talento-AI">
+  <rect width="1200" height="700" fill="#151f34"/>
+  <rect x="65" y="75" width="1070" height="550" rx="26" fill="#22365c"/>
+  <text x="110" y="165" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="58">Talento-AI</text>
+  <text x="110" y="235" fill="#c7dcff" font-family="Poppins, Arial, sans-serif" font-size="30">AI-Powered Job Discovery & Matching</text>
+  <text x="110" y="310" fill="#e1ecff" font-family="Poppins, Arial, sans-serif" font-size="24">Next.js • SQL • REST APIs</text>
+</svg>

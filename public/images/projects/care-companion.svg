@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Care Companion App">
+  <rect width="1200" height="700" fill="#1a2740"/>
+  <rect x="75" y="80" width="1050" height="540" rx="28" fill="#26466f"/>
+  <text x="120" y="170" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="54">Care Companion App</text>
+  <text x="120" y="240" fill="#cbe3ff" font-family="Poppins, Arial, sans-serif" font-size="30">Medicine Reminders • To-Do Alerts • Accessibility Gestures</text>
+  <text x="120" y="315" fill="#e2efff" font-family="Poppins, Arial, sans-serif" font-size="24">Flutter • Dart</text>
+</svg>
