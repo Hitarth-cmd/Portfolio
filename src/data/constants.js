@@ -4,7 +4,7 @@ export const Bio = {
   description:
     "I am a Full Stack Developer focused on building practical, user-centric products with clean architecture and reliable APIs. I enjoy turning real-world requirements into performant web and mobile experiences.",
   github: "https://github.com/Hitarth-cmd",
-  resume: "https://github.com/Hitarth-cmd/Portfolio",
+  resume: "/Final_Resume.pdf",
   linkedin: "https://www.linkedin.com/in/hitarth-malviya-6a8b9b23a/",
   email: "hitarth.malviya22@gmail.com",
   phone: "+91 6351450613",

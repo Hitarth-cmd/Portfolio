@@ -248,7 +248,7 @@ const Hero = () => {
 
               <CTAContainer>
                 <ResumeButton href="#Projects">View Projects</ResumeButton>
-                <ResumeButton href={Bio.resume} target="_blank">
+                <ResumeButton href={Bio.resume} target="_blank" rel="noopener noreferrer">
                   Resume
                 </ResumeButton>
               </CTAContainer>
