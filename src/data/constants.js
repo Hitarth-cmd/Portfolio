@@ -1,6 +1,6 @@
 export const Bio = {
   name: "Hitarth Malviya",
-  roles: ["Full Stack Developer"],
+  roles: ["a Full Stack Developer", "an AI/ML enthusiast"],
   description:
     "I am a Full Stack Developer focused on building practical, user-centric products with clean architecture and reliable APIs. I enjoy turning real-world requirements into performant web and mobile experiences.",
   github: "https://github.com/Hitarth-cmd",

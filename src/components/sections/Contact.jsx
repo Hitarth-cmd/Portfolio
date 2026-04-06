@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser";
 import { Bio } from "../../data/constants";
@@ -46,7 +46,7 @@ const Desc = styled.div`
   }
 `;
 
-const ContactForm = styled.div`
+const ContactForm = styled.form`
   width: 95%;
   max-width: 600px;
   display: flex;
@@ -120,29 +120,51 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    filter: brightness(1.1);
+  }
 `;
 
 const Contact = () => {
-  const form = useRef();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+    };
+
     emailjs
-      .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
-        form.current,
-        "SybVGsYS52j2TfLbi"
+      .send(
+        "service_11rrev7", 
+        "template_tsu965p", 
+        templateParams, 
+        "0WTbuSxnyf82JoeyO"
       )
       .then(
         (result) => {
-          alert("Message Sent");
-          form.current.reset();
+          alert("Message Sent successfully!");
+          setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
-          alert(error);
+          alert("Failed to send message: " + error.text);
         }
       );
   };
+
   return (
     <Container id="Contact">
       <Wrapper>
@@ -165,10 +187,29 @@ const Contact = () => {
             </ContactLink>
           </ContactLinks>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" name="message" rows={4} />
+          <ContactInput 
+            placeholder="Your Name" 
+            name="name" 
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <ContactInput 
+            placeholder="Your Email" 
+            name="email"
+            type="email" 
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <ContactInputMessage 
+            placeholder="Message" 
+            name="message" 
+            rows={4} 
+            value={formData.message}
+            onChange={handleChange}
+            required
+          />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
       </Wrapper>
